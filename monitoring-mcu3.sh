@@ -1,6 +1,6 @@
     #!/bin/bash
     ip=X.X.X.X    #Change the IP address according to your need \
-    fail_count=2  #Change the fail-count value according to your need \
+    fail_count=2  #Change the fail_count value according to your need \
     
     count=0
     trace_executed=0
