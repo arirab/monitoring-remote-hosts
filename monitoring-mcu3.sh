@@ -1,6 +1,6 @@
     #!/bin/bash
-    ip=X.X.X.X   `#Change the IP address according to your need` \
-    fail_count=2 `#Change the fail-count value according to your need ` \
+    ip=X.X.X.X    #Change the IP address according to your need \
+    fail_count=2  #Change the fail-count value according to your need \
     
     count=0
     trace_executed=0
@@ -20,7 +20,7 @@
    	  echo '---------------------------------------' >> ~/mcu3-traceroute.log
       traceroute $ip >> ~/mcu3-traceroute.log
       mail -s "Packet Loss: mcu3 | Trace Route Report" userid@example.com < ~/mcu3-traceroute.log
-   	  trace_executed=1   `#Change the email id according to your need ` \
+   	  trace_executed=1   #Change the email id according to your need \
 
    	  echo 'Trace Report Emailed'
    	  echo '***'
