@@ -9,8 +9,8 @@
       result=$?
 
     if [ $result == "1" ]; then
-	    echo FAIL!!! on `date`
-	    echo FAIL!!! on `date` >> ~/mcu3-ping-fail.log
+	    echo FAIL!!! X.X.X.X on `date`	#Change the IP address according to your need \
+	    echo FAIL!!! X.X.X.X on `date` >> ~/mcu3-ping-fail.log	#Change the IP address according to your need \
       
     if [[ $count == $fail_count && $trace_executed == 0 ]]; then
 	    echo '***'    
@@ -31,8 +31,8 @@
      fi
      
     if [ $result == "0" ]; then 
-	    echo PONG! on `date`
-	    echo PONG! on `date` >> ~/mcu3-ping-success.log
+	    echo PONG! X.X.X.X on `date`	#Change the IP address according to your need \
+	    echo PONG! X.X.X.X on `date` >> ~/mcu3-ping-success.log	#Change the IP address according to your need \
 	    count=0
     fi
     sleep .5s
